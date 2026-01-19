@@ -1,3 +1,209 @@
-body{
-    background-color: brown;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* glovel-section  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+/* shared section  */
+.primary-btn{
+    padding: 12px 16px ;
+    border-radius: 20px;
+    background: linear-gradient(#F7E93F, #FB09B4,#9100F8);
+    color: white;
+    
+}
+.primary-color{
+    font-size: 3.7rem;
+    font-weight: 800;
+}
+
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color:#0f0640;
+}
+
+.nav-container{
+    max-width: 1600px;
+    width: 1200px;
+    margin: 24px auto 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.nav-container>ul{
+    display:flex;
+    align-items: center;
+    gap:32px;
+}
+.nav-container>ul,a{
+    list-style: none;
+    text-decoration: none;
+    color:white;
+    
+}
+.nav-container .logo .pink{
+    background: linear-gradient(#F7E93F, #FB09B4,#9100F8);
+    color: transparent;
+    background-clip: text;
+}
+.nav-container .hamburger{
+    display: none;
+}
+
+/* banner-section  */
+
+.banner-section{
+    max-width: 1600px;
+    margin:0 auto ;
+    
+}
+.banner-img{
+  
+   background-repeat: no-repeat;
+   background-image: url(./assets/hero-bg.png);
+   position: relative;
+
+}
+.hero-circle{
+    text-align: center;
+    padding-top:80px;
+    padding-left:50px;
+    justify-content: center;
+    top:50px;
+  
+    
+}
+.new{
+position: absolute;
+right: 600px;
+top:100px;
+background-color: rgb(102, 255, 102);
+padding: 8px 16px;
+border-radius: 20px;
+
+}
+.microphone{
+    position: absolute;
+    top:155px;
+    right:600px;
+    left:650px;
+
+}
+.banner-description{
+    color: white;
+    text-align: center;
+    padding-left:50px;
+    margin-top: 40px;
+}
+.banner-description p{
+    margin-top: 8px;
+    font-size: small;
+
+}
+
+.twin{
+    margin-top: 24px;
+}
+.spotify{
+    padding: 12px 20px;
+}
+.spotify i{
+    padding-right:20px;
+}
+.dark-btn{
+    color: green;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: 2px solid green;
+    border-radius: 20px;
+    background-color: black;
+}
+.dark-btn img{
+  position:relative;
+  bottom:-2px;
+  padding-right: 5px;
+  
+}
+
+
+/* responsive section  */
+
+/* for-madium-device  */
+
+@media screen and (max-width:576px) {
+    .nav-container{
+        max-width: 500px;
+        margin: 10px auto ;
+        display: flex;
+        justify-content:space-between;
+        color: white; 
+    }
+    .nav-container>ul{
+        display:none;
+    } 
+    .nav-container .hamburger{
+       display: flex;
+       height:20px;
+       margin:10px 0;
+      
+    }
+    .nav-container .primary-btn{
+        display: none;
+    }
+
+    .banner-section {
+        max-width: 576px;
+        
+
+    }
+    .banner-img{
+        background-image: url(./assets/hero-bg.png);
+        background-size: cover;
+        background-position:center;
+        
+        
+     
+     }
+     .hero-circle img{
+       
+        margin-bottom:150px;
+        margin-right: 50px;
+        width:200px;
+        height:200px;
+        
+        
+        
+    }
+    .microphone img{
+        position: absolute;
+        top:-20px;
+        left:-395px;
+        width: 60px;
+        height: 80px;
+        
+    }
+    .new{
+        position: absolute;
+        right: 190px;
+        top:80px;
+        background-color: rgb(102, 255, 102);
+        padding: 8px 16px;
+        border-radius: 20px;
+        
+        }
+        .banner-description{
+           position: absolute;
+           bottom:230px;
+          
+        }
+        .banner-description h1{
+            font-size: 2rem;
+        }
+}
+
+
+
