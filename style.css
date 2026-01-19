@@ -15,6 +15,14 @@
     color: white;
     
 }
+.primary-btn:hover{
+    font-size: large;
+    
+}
+.dark-btn:hover{
+    font-size: large;
+}
+
 .primary-color{
     font-size: 3.7rem;
     font-weight: 800;
@@ -58,8 +66,8 @@ body{
 
 .banner-section{
     max-width: 1600px;
-    
     margin:0 auto ;
+    
     
 }
 .banner-img{
@@ -78,6 +86,7 @@ body{
   
     
 }
+
 .new{
 position: absolute;
 right: 600px;
@@ -94,15 +103,20 @@ border-radius: 20px;
     left:650px;
 
 }
+
 .banner-description{
     color: white;
     text-align: center;
     padding-left:50px;
     margin-top: 40px;
+    transform:width 5s;
 }
 .banner-description p{
     margin-top: 8px;
     font-size: small;
+}
+.banner-description p:hover{
+    font-size: large;
 
 }
 
@@ -116,7 +130,7 @@ border-radius: 20px;
     padding-right:20px;
 }
 .dark-btn{
-    color: green;
+    color: rgb(35, 205, 35);
     font-weight: 600;
     padding: 12px 20px;
     border: 2px solid green;
@@ -136,6 +150,9 @@ border-radius: 20px;
     margin: 50px auto ;
     color:white;
 }
+.about-section:hover{
+    transform: width 5s;
+}
 .about-details{
     text-align: center;
 }
@@ -144,16 +161,21 @@ border-radius: 20px;
     font-size: small;
     line-height: 20px;
 }
+.about-details p:hover{
+    font-size: large;
+
+}
 .about-resume{
     display: flex;
     justify-content: space-between;
     margin-top: 160px;
+    
 }
 .about-resume .card{
     gap:80px;
 }
 .about-resume h1{
-    color: rgb(61, 255, 61);
+    color: rgb(46, 212, 46);
     font-size: 3rem;
 }
 .about-resume p{
@@ -181,6 +203,7 @@ border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,200px);
+    transition: width 5s;
   }
   .grid-container> .layout{
     background-color: rgba(53, 17, 101, 0.4);
@@ -203,26 +226,57 @@ border-radius: 20px;
     color:rgba(255, 255, 255, 0.571);
     font-size:small;
   }
+  .grid-container> .layout p:hover{
+    font-size: large;
+  }
 
   .layout-1{
    grid-column: span 1;
    grid-row: span 2;
+
   }
+  .layout-1:hover{
+    width: 800px;
+    background-color: rgb(135, 124, 124);
+    
+    
+  }
+  
   .layout-2{
     grid-column: span 2;
     grid-row: span 1;
+  }
+  .layout-2:hover{
+    background-color: rgb(135, 124, 124);
+    width: 800px; 
   }
   .layout-3{
     grid-column: span 2;
     grid-row: span 1;
   }
+  .layout-3:hover{
+    background-color: rgb(135, 124, 124);
+    width: 800px;
+  }
   .layout-4{
     grid-column: span 2;
     grid-row: span 1;
   }
+  .layout-4:hover{
+    background-color: rgb(135, 124, 124);
+    width: 800px;
+  }
+  
   .layout-5{
     grid-column: span 1;
     grid-row: span 1;
+  }
+  .layout-5:hover{
+    background-color: rgb(135, 124, 124);
+  }
+  .layout-5:hover{
+    width:500px;
+    background-color: rgb(135, 124, 124);
   }
 
 
@@ -232,6 +286,7 @@ border-radius: 20px;
     width: 1200px;
     margin: 0 auto;
     color: white; 
+    transform: width 5s;
 }
 .episode-section h1{
     text-align: center;
@@ -266,17 +321,20 @@ border-radius: 20px;
 }
 .episode p{
     font-size:small;
-    line-height: 24px;
     color: rgba(255, 255, 255, 0.367);
     margin-bottom: 14px;
+    line-height: 24px;
+}
+.episode p:hover{
+    margin-top: 20px;
+    font-size: large;
 }
 .episode .red{
- padding-bottom:24px;
- font-size:larger;
- color: rgb(87, 233, 87);
- 
-
-
+    display: flex;
+    align-items: center;
+    padding-bottom:24px;
+    font-size:larger;
+    color: rgb(87, 233, 87);
 }
 .episode img{
     width: 20px;
@@ -291,6 +349,7 @@ border-radius: 20px;
     width: 1200px;
     margin: 0 auto;
     color: white; 
+    transform:width 5s;
 }
 .host-section h1{
     text-align: center;
@@ -309,7 +368,7 @@ border-radius: 20px;
 .host-description{
     padding: 40px 40px 40px 0;
 }
-.host-description h1{
+.host-description h3{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom:16px;
@@ -318,15 +377,71 @@ border-radius: 20px;
  color: rgba(255, 255, 255, 0.584);
  line-height: 24px;
  margin-bottom:16px;
+
+}
+.host-description p:hover{
+    font-size: x-large;
+    color:#eb5a83c2;
+    line-height: 35px;
+    margin:20px 0;
 }
 .icon img{
+    margin-right: 8px;
+    width: 35px;
+    height:35px;
     padding:10px;
     border-radius: 50%;
-    border: 1px solid rgba(83, 60, 114, 1);
+    border: 1px solid rgb(200, 192, 210);
 }
 
+/* footer section  */
 
-
+footer .logo .pink{
+    background: linear-gradient(#F7E93F, #FB09B4,#9100F8);
+    color: transparent;
+    background-clip: text;
+    
+}
+.footer-container{
+    width: 1600px;
+    height:250px;
+    background-color:yellow;
+    background-image: url(./assets/footer-bg.png);
+    align-items: center;
+    align-content: center;
+    background-position: center;
+}
+.footer-container>.logo{
+    color: white;
+    text-align: center;
+}
+.spons{
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap:40px;
+    margin-top: 32px;
+}
+.spons .hello{
+    font-size:small;
+    color: rgba(255, 255, 255, 0.479);
+    display: flex;
+    align-items: center;
+   
+    
+}
+.spons img{
+   width: 20px;
+   height: 20px;
+   
+}
+.copyright{
+    color: white;
+    text-align: center;
+    margin-top: 32px;
+    font-size:x-small;
+    color: rgba(255, 255, 255, 0.437);
+}
 
 /* responsive section  */
 
