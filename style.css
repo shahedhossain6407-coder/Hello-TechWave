@@ -58,6 +58,7 @@ body{
 
 .banner-section{
     max-width: 1600px;
+    
     margin:0 auto ;
     
 }
@@ -128,14 +129,211 @@ border-radius: 20px;
   padding-right: 5px;
   
 }
+/* about-section  */
+.about-section{
+    max-width: 1600px;
+    width: 1200px;
+    margin: 50px auto ;
+    color:white;
+}
+.about-details{
+    text-align: center;
+}
+.about-details p{
+    margin-top: 16px;
+    font-size: small;
+    line-height: 20px;
+}
+.about-resume{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+}
+.about-resume .card{
+    gap:80px;
+}
+.about-resume h1{
+    color: rgb(61, 255, 61);
+    font-size: 3rem;
+}
+.about-resume p{
+    margin-top: 16px;
+    font-size: small;
+    line-height: 20px;
+}
+/* grid-section  */
+
+  .grid-section{
+    max-width: 1600px;
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+  }
+  .grid-section>h1{
+    margin-top: 120px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .grid-container{
+    gap:30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,200px);
+  }
+  .grid-container> .layout{
+    background-color: rgba(53, 17, 101, 0.4);
+    align-content: center;
+    border-radius: 40px;
+    padding:20px 40px;
+    
+  }
+  .grid-container> .layout img{
+    width:40px;
+    height:40px;
+    margin-bottom: 16px;
+  }
+  .grid-container> .layout h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .grid-container> .layout p{
+    color:rgba(255, 255, 255, 0.571);
+    font-size:small;
+  }
+
+  .layout-1{
+   grid-column: span 1;
+   grid-row: span 2;
+  }
+  .layout-2{
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .layout-3{
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .layout-4{
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .layout-5{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+
+  /* episode section  */
+.episode-section {
+    max-width: 1600px;
+    width: 1200px;
+    margin: 0 auto;
+    color: white; 
+}
+.episode-section h1{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.episode-container {
+    display: flex;
+    justify-content: space-between;
+}
+.episode>iframe{
+    width: 380px;
+    height:214px;
+    border-radius: 24px 24px 0px 0px;
+}
+.episode{
+    
+    padding-right: 30px;
+   
+}
+.episode-details{
+    padding-left: 24px;
+    background-color:rgba(53, 17, 101, 0.4);
+}
+.episode h5{
+    margin-top: 24px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.episode p{
+    font-size:small;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.367);
+    margin-bottom: 14px;
+}
+.episode .red{
+ padding-bottom:24px;
+ font-size:larger;
+ color: rgb(87, 233, 87);
+ 
+
+
+}
+.episode img{
+    width: 20px;
+    height: 20px;
+    margin-right:10px;
+   
+}
+  /* host section  */
+   
+.host-section{
+    max-width: 1600px;
+    width: 1200px;
+    margin: 0 auto;
+    color: white; 
+}
+.host-section h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 120px;
+}
+.host-container{
+    background-color: rgba(53, 17, 101, 0.4);
+    display: flex;
+    margin-top: 40px;
+}
+.host-img{
+    padding: 40px 24px 40px 40px;
+}
+.host-description{
+    padding: 40px 40px 40px 0;
+}
+.host-description h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom:16px;
+}
+.host-description p{
+ color: rgba(255, 255, 255, 0.584);
+ line-height: 24px;
+ margin-bottom:16px;
+}
+.icon img{
+    padding:10px;
+    border-radius: 50%;
+    border: 1px solid rgba(83, 60, 114, 1);
+}
+
+
 
 
 /* responsive section  */
 
 /* for-madium-device  */
 
-@media screen and (max-width:576px) {
-    .nav-container{
+/* @media screen and (max-width:576px) { */
+    /* .nav-container{
         max-width: 500px;
         margin: 10px auto ;
         display: flex;
@@ -197,13 +395,151 @@ border-radius: 20px;
         }
         .banner-description{
            position: absolute;
-           bottom:230px;
+           bottom:200px;
           
         }
         .banner-description h1{
             font-size: 2rem;
         }
-}
+        .about-section{
+            margin: 50px auto ;
+            color:white;
+            
+        }
+        .about-details h1{
+            text-align: left;
+            padding-left: 150px;
+        }
+       
+        .about-details p{
+            width: 500px;
+            text-align: center;
+            margin:5px 20px;
+        }
+        .about-resume{
+            max-width: 500px;
+            display:grid;
+            grid-template-columns: repeat(2,1fr); 
+            margin-top: 60px;
+            margin-left: 120px;
+            
+        }
+        .about-resume .card h1{
+         font-size: 2rem;
+        }
+        .about-resume .card p{
+            margin-bottom:20px;
+           
+        }
+    } */
+/* for large device  */
 
+/* @media screen and (min-width:992px) and (max-width:1200px){ */
+    /* .nav-container{
+      
+        width:940px;
+         margin: 10px auto;
+        justify-content:space-between;
+        color: white; 
+    }
+  
 
+    .banner-section {
+        max-width: 992px;
+        
 
+    }
+    .banner-img{
+        background-image: url(./assets/hero-bg.png);
+        background-size: cover;
+        background-position:center;
+        
+     }
+     .hero-circle img{
+       
+        margin-bottom:150px;
+        margin-right: 50px;
+        width:200px;
+        height:200px;
+        
+    
+    }
+    .microphone img{
+        position: absolute;
+        top:-20px;
+        left:-185px;
+        width: 60px;
+        height: 80px;
+        
+    }
+    .new{
+        position: absolute;
+        right: 400px;
+        top:80px;
+        background-color: rgb(102, 255, 102);
+        padding: 8px 16px;
+        border-radius: 20px;
+        
+        }
+        .banner-description{
+            min-width:992px;
+            width:940px;
+           position: absolute;
+           bottom:190px;
+           left:225px;
+        }
+        .twin{
+            margin-left: -455px;
+        }
+       
+        }
+        .banner-description h1{
+            font-size: 2rem;
+            margin-right: 430px;
+            
+            
+        }
+        .banner-description p{
+            margin-right: 400px;
+           
+        }
+        .about-section{
+            margin: 50px auto ;
+            color:white;
+            
+        }
+        
+           
+        
+        .about-details h1{
+            text-align:center;
+            margin-right:150px;
+
+        }
+       
+        .about-details p{
+            width: 992px;
+            text-align: center;
+            margin-left:10px;
+            
+        }
+        .about-resume{
+          
+            margin-top: 60px;
+            margin-left: 50px;
+            margin-left:-160px;
+            justify-content: center;
+            
+        }
+        .about-resume , .card{
+            gap:100px;
+        }
+        .about-resume .card h1{
+         font-size: 2rem;
+        }
+        .about-resume .card p{
+            
+            margin-bottom:20px;
+           
+        }
+} */
