@@ -522,12 +522,12 @@ hr{
      }
      
      .about-section{
-        
         width:100%;
         margin: -80px auto ;
         color:white;
         text-align: center;
     }
+   
     .about-resume{
        display:grid;
        grid-template-columns: repeat(2,1fr);
@@ -594,7 +594,7 @@ hr{
     }
     .episode-section {
         max-width:100%;
-        width: 1005;
+        width: 100%;
         transform: width 5s;
       
     }
@@ -636,6 +636,7 @@ hr{
     }
     .host-description{
         text-align: center;
+        padding-left: 20px;
     }
     .host-description h3{
         font-size: 2rem;
@@ -654,3 +655,130 @@ hr{
     padding-bottom: 20px;
     }
 }
+
+/* responsive for large device  */
+
+@media screen and (min-width:992px) {
+
+    .nav-container{ 
+       max-width:100%;
+       width:100%;
+       margin:10px auto;
+       align-items: center;
+       justify-content:space-between;
+    }
+    .banner-img{
+        background-size:100%;
+       
+     }
+     .banner-container{
+        position:relative;
+     }
+     .hero-circle img{
+        position: relative;
+        width: 40%;
+        top:-70px;
+        left:-25px;
+     }
+     .microphone{
+        width: 30%;
+        position: relative;
+        top:-260px;
+        left: 325px;
+        
+     }
+     .new{
+        position: relative;
+        right:-580px;
+        top:-600px;
+        }
+        .banner-description{
+            color: white;
+            text-align: center;
+            padding-left:30px;
+            transform:width 5s;
+            position: relative;
+            top:-150px;
+            left:-5px;
+         }
+         .about-section{
+        
+            width:100%;
+            margin: -80px auto ;
+            color:white;
+            text-align: center;
+        }
+        .grid-section h1{
+            padding-bottom: 50px;
+            padding-top: 50px;
+           
+        }
+        .about-resume{
+            width: 80%;
+            margin: 50px auto ;
+             
+         }
+         .grid-section{
+            max-width: 100%;
+            width: 80%;
+        }
+        .layout-1:hover{
+            width: 800px;
+            background-color: rgb(135, 124, 124);
+            margin-left: 10px;
+            
+            
+          }
+          .layout-2:hover{
+            width: 800px;
+            background-color: rgb(135, 124, 124);
+            margin-left: 10px;
+            
+          }
+         
+        .layout-3:hover{
+            width: 800px;
+            background-color: rgb(135, 124, 124);
+            margin-left: 10px;
+        }
+        .layout-4:hover{
+            width: 800px;
+            background-color: rgb(135, 124, 124);
+            margin-left: 10px;
+        }
+        .layout-5:hover{
+            width: 500px;
+            background-color: rgb(135, 124, 124);
+            margin-left: 10px;
+        }
+        .episode-section {
+            max-width:100%;
+            width: 100%;
+            transform: width 5s;
+            padding-left:8px;
+          
+        }
+        
+        .episode>iframe{
+            width: 300px;
+            height:180px;
+            border-radius: 24px 24px 0px 0px;
+            
+        }
+        .host-section{
+            max-width:100%;
+            width: 100%;
+            transform: width 5s;
+        }
+        .host-section h1{
+            margin-top:70px;
+        }
+        footer .footer-container{
+            max-width:100%;
+            width: 100%;
+            transform: width 5s;
+        }
+        
+       
+}
+
