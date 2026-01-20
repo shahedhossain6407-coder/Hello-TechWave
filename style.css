@@ -412,8 +412,10 @@ footer .logo .pink{
     background-position: center;
 }
 .footer-container>.logo{
+    margin-top: 50px;
     color: white;
     text-align: center;
+    
 }
 .spons{
     display: flex;
@@ -435,226 +437,220 @@ footer .logo .pink{
    height: 20px;
    
 }
+hr{
+    margin-top: 50px;
+    border: 1px solid rgb(86, 77, 77);
+}
 .copyright{
     color: white;
     text-align: center;
-    margin-top: 32px;
+    margin-top:20px;
     font-size:x-small;
     color: rgba(255, 255, 255, 0.437);
+    
 }
 
 /* responsive section  */
 
 /* for-madium-device  */
 
-/* @media screen and (max-width:576px) { */
-    /* .nav-container{
-        max-width: 500px;
-        margin: 10px auto ;
-        display: flex;
+@media screen and (max-width:576px) {
+      .nav-container{ 
+       max-width:100%;
+        width:90%;
+        margin:10px auto;
+        align-items: center;
         justify-content:space-between;
-        color: white; 
     }
     .nav-container>ul{
         display:none;
-    } 
-    .nav-container .hamburger{
-       display: flex;
-       height:20px;
-       margin:10px 0;
-      
+       
     }
-    .nav-container .primary-btn{
+    .nav-container>.primary-btn{
         display: none;
     }
-
-    .banner-section {
-        max-width: 576px;
+    .nav-container .hamburger{
+        display: flex;
+        width: 20px;
+        height: 20px;
         
-
     }
     .banner-img{
-        background-image: url(./assets/hero-bg.png);
-        background-size: cover;
-        background-position:center;
-        
-        
-     
+        background-size:100%;
+       
+     }
+     .banner-container{
+        position:relative;
      }
      .hero-circle img{
-       
-        margin-bottom:150px;
-        margin-right: 50px;
-        width:200px;
-        height:200px;
-        
-        
-        
-    }
-    .microphone img{
-        position: absolute;
-        top:-20px;
-        left:-395px;
-        width: 60px;
-        height: 80px;
-        
-    }
-    .new{
-        position: absolute;
-        right: 190px;
-        top:80px;
-        background-color: rgb(102, 255, 102);
-        padding: 8px 16px;
-        border-radius: 20px;
-        
-        }
-        .banner-description{
-           position: absolute;
-           bottom:200px;
-          
-        }
-        .banner-description h1{
-            font-size: 2rem;
-        }
-        .about-section{
-            margin: 50px auto ;
-            color:white;
-            
-        }
-        .about-details h1{
-            text-align: left;
-            padding-left: 150px;
-        }
-       
-        .about-details p{
-            width: 500px;
-            text-align: center;
-            margin:5px 20px;
-        }
-        .about-resume{
-            max-width: 500px;
-            display:grid;
-            grid-template-columns: repeat(2,1fr); 
-            margin-top: 60px;
-            margin-left: 120px;
-            
-        }
-        .about-resume .card h1{
-         font-size: 2rem;
-        }
-        .about-resume .card p{
-            margin-bottom:20px;
-           
-        }
-    } */
-/* for large device  */
-
-/* @media screen and (min-width:992px) and (max-width:1200px){ */
-    /* .nav-container{
-      
-        width:940px;
-         margin: 10px auto;
-        justify-content:space-between;
-        color: white; 
-    }
-  
-
-    .banner-section {
-        max-width: 992px;
-        
-
-    }
-    .banner-img{
-        background-image: url(./assets/hero-bg.png);
-        background-size: cover;
-        background-position:center;
+        position: relative;
+        width: 40%;
+        top:-70px;
+        left:-25px;
+     }
+     .microphone{
+        width: 30%;
+        position:relative;
+        top:-155px;
+        left: 175px;
         
      }
-     .hero-circle img{
-       
-        margin-bottom:150px;
-        margin-right: 50px;
-        width:200px;
-        height:200px;
+     .new{
+        position: relative;
+        right:-330px;
+        top:-350px;
         
+        }
     
+     .banner-description{
+        color: white;
+        text-align: center;
+        padding-left:30px;
+        transform:width 5s;
+        position: relative;
+        top:-150px;
+        left:-5px;
+     }
+     .banner-description h1{
+        font-size: 2rem;
+     }
+     .banner-description .primary-btn{
+       padding: 10px;
+     }
+     .banner-description .dark-btn{
+        padding: 8px;
+     }
+     
+     .about-section{
+        
+        width:100%;
+        margin: -80px auto ;
+        color:white;
+        text-align: center;
     }
-    .microphone img{
-        position: absolute;
-        top:-20px;
-        left:-185px;
-        width: 60px;
-        height: 80px;
+    .about-resume{
+       display:grid;
+       grid-template-columns: repeat(2,1fr);
+       margin: 50px auto ;
         
     }
-    .new{
-        position: absolute;
-        right: 400px;
-        top:80px;
-        background-color: rgb(102, 255, 102);
-        padding: 8px 16px;
-        border-radius: 20px;
-        
-        }
-        .banner-description{
-            min-width:992px;
-            width:940px;
-           position: absolute;
-           bottom:190px;
-           left:225px;
-        }
-        .twin{
-            margin-left: -455px;
-        }
+     
+    .grid-section{
+        max-width: 100%;
+        width: 100%;
+    }
+    .grid-section h1{
+        font-size: 2rem;
+        padding-top: 50px;
        
-        }
-        .banner-description h1{
-            font-size: 2rem;
-            margin-right: 430px;
-            
-            
-        }
-        .banner-description p{
-            margin-right: 400px;
-           
-        }
-        .about-section{
-            margin: 50px auto ;
-            color:white;
-            
-        }
+    }
+    .grid-container{
+        gap:15px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        transition: width 5s;
+      }
+      .grid-container,.layout{
+        background-color: rgba(53, 17, 101, 0.4);
+        align-content: center;
+        border-radius: 40px;
+        padding:20px;
+      }
+      
+     .layout-1,.layout-2,.layout-3,.layout-4,.layout-5{
+        grid-column: span 1;
+        grid-row: span 1;
+       
+     }
+     .layout-1:hover{
+        width: 500px;
+        font-size:small;
+        background-color: rgb(135, 124, 124);
+        margin-left: 10px;
         
-           
         
-        .about-details h1{
-            text-align:center;
-            margin-right:150px;
+      }
+      .layout-2:hover{
+        width: 500px;
+        background-color: rgb(135, 124, 124);
+        margin-left: 10px;
+        
+      }
+     
+    .layout-3:hover{
+        width: 500px;
+        background-color: rgb(135, 124, 124);
+        margin-left: 10px;
+    }
+    .layout-4:hover{
+        width: 500px;
+        background-color: rgb(135, 124, 124);
+        margin-left: 10px;
+    }
+    .layout-5:hover{
+        width: 500px;
+        background-color: rgb(135, 124, 124);
+        margin-left: 10px;
+    }
+    .episode-section {
+        max-width:100%;
+        width: 1005;
+        transform: width 5s;
+      
+    }
+    .episode-container{
+        flex-direction: column;
+        padding: 20px 75px;
+    }
+    .episode>iframe{
+        width: 375px;
+        height:240px;
+        border-radius: 24px 24px 0px 0px;
+    }
+    .episode{
+        margin-bottom: 30px;
+    }
+    .episode-details{
+        padding-left: 14px;
+        background-color:rgba(53, 17, 101, 0.4);
+    }
 
-        }
-       
-        .about-details p{
-            width: 992px;
-            text-align: center;
-            margin-left:10px;
-            
-        }
-        .about-resume{
-          
-            margin-top: 60px;
-            margin-left: 50px;
-            margin-left:-160px;
-            justify-content: center;
-            
-        }
-        .about-resume , .card{
-            gap:100px;
-        }
-        .about-resume .card h1{
-         font-size: 2rem;
-        }
-        .about-resume .card p{
-            
-            margin-bottom:20px;
-           
-        }
-} */
+    .host-section{
+        max-width:100%;
+        width: 100%;
+        transform: width 5s;
+    }
+    .host-section h1{
+        
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top:20px;
+    }
+    .host-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .host-img{
+       padding-left: 160px;
+       padding-top: 80px;
+    }
+    .host-description{
+        text-align: center;
+    }
+    .host-description h3{
+        font-size: 2rem;
+    }
+    footer .footer-container{
+        max-width:100%;
+        width: 100%;
+        transform: width 5s;
+    }
+    .spons{
+        display:grid;
+        grid-template-columns: repeat(2,2fr);
+        padding-left: 100px;
+     } 
+   .copyright{
+    padding-bottom: 20px;
+    }
+}
