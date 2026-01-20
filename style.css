@@ -1386,11 +1386,13 @@ hr{
             margin-top:70px;
         }
         footer .footer-container{
-            max-width:100%;
-            width: 100%;
-            transform: width 5s;
+           
+                max-width: 100%;
+                width: 100%;
+             
+            }
         }
         
        
-}
+
 
