@@ -1270,7 +1270,7 @@ hr{
 
 /* responsive for large device  */
 
-@media screen and (min-width:992px) and (max-width:1400px){
+@media screen and (min-width:992px) and (max-width:1536px){
 
     .nav-container{ 
        max-width:100%;
